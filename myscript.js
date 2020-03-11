@@ -13,7 +13,10 @@ function logNumbers() {
   console.log(2+2);
 }    
 // upon mouse going onto window, background of body with id changes colour
-    window.addEventListener("mouseover", changeBackground);
-    window.addEventListener("mouseout", newText);
-    window.addEventListener("click", addBorder);
-    window.addEventListener("click", logNumbers);
+window.addEventListener("mouseover", changeBackground);
+// when mouse moves again, new text is displayed
+window.addEventListener("mouseout", newText);
+// when button is clicked, a border is added to the body
+window.addEventListener("click", addBorder);
+// when button is clicked, console logs 2+2, making it display 4
+window.addEventListener("click", logNumbers);
